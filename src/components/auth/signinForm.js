@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
-import { reduxForm, Field } from 'redux-form';  
+import { reduxForm, Field } from 'redux-form';
+
+import { FormInput } from '../formFields';
 
  class SigninForm extends Component {
    render() {
@@ -8,7 +10,18 @@ import { reduxForm, Field } from 'redux-form';
        return (
            <div className='sign-in-form'>
                <form className={`${className} sign-in-form`} >
-                   sign in
+                   <Field className='sign-in-form__email'
+                   name='email'
+                   type='email'
+                   title='Email'
+                   placeholder='Email' 
+                   component={FormInput}/>
+                   <Field className='sign-in-form__password'
+                   name='password'
+                   type='password'
+                   title='Password'
+                   placeholder='Password' 
+                   component={FormInput}/>
                </form>
            </div>
        );
