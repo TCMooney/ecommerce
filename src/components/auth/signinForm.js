@@ -22,6 +22,7 @@ import { FormInput, FormButton } from '../formFields';
                    title='Password'
                    placeholder='Password' 
                    component={FormInput}/>
+                   <div className='sign-in-form__line'></div>
                    <Field className='sign-in-form__login'
                    onClick={() => console.log('trying to submit')}
                    name='login'
