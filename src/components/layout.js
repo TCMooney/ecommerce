@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Header from './headerNavBar/header'
-import NavBar from './headerNavBar/navBar'
+import Header from './headerNavbar/header'
+import Navbar from './headerNavbar/navbar'
 
 class Layout extends Component {
   render() {
@@ -9,7 +9,7 @@ class Layout extends Component {
       <div className='layout'>
         {this.props.children}
         <Header/>
-        <NavBar/>
+        <Navbar/>
       </div>
     );
   }
