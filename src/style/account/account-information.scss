@@ -1,0 +1,44 @@
+.account-information {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+
+    &__form {
+        display: grid;
+        grid-template-rows: [name-s street-address-s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e zipcode-s state-s] 64px [zipcode-e state-e];
+        grid-template-columns: [s] 1fr [m] 1fr [e];
+        grid-row-gap: 15px;
+    }
+}
+
+.account-information-form {
+    &__name {
+        grid-row: name-s/name-e;
+        grid-column: s/m;
+    }
+    &__email {
+        grid-row: email-s/email-e;
+        grid-column: s/m;
+    }
+    &__street-address {
+        grid-row: street-address-s/street-address-e;
+        grid-column: m/e;
+    }
+    &__city {
+        grid-column: m/e;
+        grid-row: city-s/city-e;
+    }
+    &__state {
+        grid-row: state-s/state-e;
+    }
+    &__zipcode {
+        transform: translateX(226px);
+        grid-row: zipcode-s/zipcode-e;
+    }
+    &__state,
+    &__zipcode {
+        grid-column: m/e;
+        input {
+            width: 200px;
+        }
+    }
+}
