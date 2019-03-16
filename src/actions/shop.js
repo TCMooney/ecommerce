@@ -1,12 +1,20 @@
 import {
-    // SET_SHOP_CATEGORIES
-    SET_NAVBAR_LINKS,
-    SET_SHOP_PRODUCTS
+    SET_SHOP_CATEGORIES,
+    SET_SHOP_PRODUCTS,
+    FILTER_PRODUCTS_WITH_CATEGORY_ID
 } from "./types";
 
+export function filterProductsWithCategoryId(_id) {
+    console.log(_id, 'jello');
+    return ({
+        type: FILTER_PRODUCTS_WITH_CATEGORY_ID,
+        payload: _id
+    })
+}
+
 export function fetchShopCategories() {
-    return({
-        type: SET_NAVBAR_LINKS,
+    return ({
+        type: SET_SHOP_CATEGORIES,
         payload: [
             {
                 _id: 0,
@@ -41,7 +49,7 @@ export function fetchShopCategories() {
 }
 
 export function fetchShopProducts() {
-    return({
+    return ({
         type: SET_SHOP_PRODUCTS,
         payload: [
             {
@@ -89,7 +97,7 @@ export function fetchShopProducts() {
             {
                 _id: 6,
                 title: 'Advanced Object Oriented Programming',
-                description: "No, forget it, it's too risky. I'm through doin' that shit.",price: '',
+                description: "No, forget it, it's too risky. I'm through doin' that shit.", price: '',
                 belongsTo: [0, 6]
             }
         ]
