@@ -71,41 +71,42 @@ export function fetchShopProducts() {
                 _id: 1,
                 title: 'Graph Database',
                 description: 'American Heritage Dictionary: New College Edition',
-                price: '',
+                price: '1.99',
                 belongsTo: [0, 6]
             },
             {
                 _id: 2,
                 title: 'Full Stack Development',
                 description: 'INT. COFFEE SHOP – MORNING',
-                price: '',
+                price: '1.99',
                 belongsTo: [0, 1, 4]
             },
             {
                 _id: 3,
                 title: 'Javascript Design',
                 description: "A normal Denny's, Spires-like coffee shop in Los Angeles. It's about 9:00 in the morning. While the place isn't jammed, there's a healthy number of people drinking coffee, munching on bacon and eating eggs.",
-                price: '',
+                price: '1.99',
                 belongsTo: [0, 1]
             },
             {
                 _id: 4,
                 title: 'User Interface Design',
                 description: "Two of these people are a YOUNG MAN and a YOUNG WOMAN. The Young Man has a slight working-class English accent and, like his fellow countryman, smokes cigarettes like they're going out of style.",
-                price: '',
+                price: '1.99',
                 belongsTo: [0, 2]
             },
             {
                 _id: 5,
                 title: 'User Experience Design',
                 description: 'It is impossible to tell where the Young Woman is from or how old she is; everything she does contradicts something she did. The boy and girl sit in a booth. Their dialogue is to be said in a rapid pace "HIS GIRL FRIDAY" fashion.',
-                price: '',
+                price: '1.99',
                 belongsTo: [0, 2]
             },
             {
                 _id: 6,
                 title: 'Advanced Object Oriented Programming',
-                description: "No, forget it, it's too risky. I'm through doin' that shit.", price: '',
+                description: "No, forget it, it's too risky. I'm through doin' that shit.",
+                price: '1.99',
                 belongsTo: [0, 6]
             }
         ]
