@@ -20,12 +20,16 @@ body {
 @import 'auth/signin.scss';
 @import 'auth/signup.scss';
 
+//AUTH
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
 
+//ACCOUNT
 @import 'account/account.scss';
 @import 'account/purchase-history.scss';
 @import 'account/account-information.scss';
 
+//SHOP
 @import 'shop/shop.scss';
+@import 'shop/shop-search-bar.scss';
