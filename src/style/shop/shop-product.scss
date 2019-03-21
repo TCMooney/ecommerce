@@ -88,8 +88,8 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        transition: all .3s ease;
         grid-row: footer-s/footer-e;
+        transition: all .3s ease; 
             &:hover {
                 transform: scale(0.97);
             }
