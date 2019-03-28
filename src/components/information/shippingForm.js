@@ -34,8 +34,6 @@ class ShippingForm extends Component {
                     title='City'
                     placeholder='City'
                     component={FormInput} />
-
-
                 <Field className='shipping-form__state'
                     name='state'
                     type='state'
