@@ -4,7 +4,6 @@ import {
     FILTER_PRODUCTS_WITH_CATEGORY_ID,
     FILTER_PRODUCTS_WITH_QUERY
 } from '../actions/types';
-import { filterProductsWithCategoryId } from '../actions';
 
 const INITIAL_STATE = {
     categories: [],
